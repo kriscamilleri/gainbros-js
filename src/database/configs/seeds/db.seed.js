@@ -1,5 +1,5 @@
 const db = require('../db.config');
-const User = require('../models/User');
+const User = require('../../../models/User');
 const bcrypt = require('bcrypt');
 
 const seed = async () => {

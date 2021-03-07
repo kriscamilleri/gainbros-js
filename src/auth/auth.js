@@ -44,6 +44,7 @@ passport.use(
     async (email, password, done) => {
       try {
         const user = await UserModel.findOne({ where: { email: email } });
+        console.log('Now what in LLOGIN')
         if (user == null) {
           return done(null, false, { message: 'Incorrect credentials.' });
         }

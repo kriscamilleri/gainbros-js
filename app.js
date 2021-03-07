@@ -6,7 +6,6 @@ const app = express();
 const AuthRoutes = require('./src/routes/AuthRoutes');
 const dbConnection = require('./src/database/configs/db.config');
 const { swaggerUI, swaggerDocs, options } = require('./src/docs/Swagger');
-
 require('./src/auth/auth');
 
 try {
