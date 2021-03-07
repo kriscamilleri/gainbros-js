@@ -32,4 +32,12 @@ module.exports = {
       }
     })(req, res, next);
   },
+
+  async show(req, res, next) {
+    try {
+      res.json({ message: 'show' });
+    } catch (error) {
+      res.status(404).json(error);
+    }
+  },
 };

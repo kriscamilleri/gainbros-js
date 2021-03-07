@@ -1,3 +1,4 @@
+const { Router } = require('express');
 const express = require('express');
 const passport = require('passport');
 const AuthController = require('../controllers/AuthController');
@@ -29,4 +30,9 @@ routes.post(
   AuthController.index
 );
 
+routes.get(
+  '/user',
+  // passport.authenticate('user', { session: false }),
+  AuthController.show
+)
 module.exports = routes;

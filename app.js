@@ -30,3 +30,5 @@ app.use(function (err, req, res, next) {
 app.listen(process.env.PORT || 3000, () => {
   console.log('Server started');
 });
+
+// require('./src/database/configs/seeds/db.seed')
